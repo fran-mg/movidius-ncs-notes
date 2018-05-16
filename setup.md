@@ -1,5 +1,7 @@
 ## From Windows or MacOS
 
+Here are simple step by step instructions for setting up a guest virtual machine to run ?ubuntu so you can use the Movidius Neural Compute Stick (NCS)
+
 Use Oracle VirtualBox to host a linux guest OS
 * Install Virtual Box
   * or you could use vmWare workstation if you prefer
@@ -18,5 +20,63 @@ Use Oracle VirtualBox to host a linux guest OS
   * answer install steps as you prefer
   * follow through until reboot
   * unmount the ISO from the VM and restart
+* pass the USB stick through to the VM
+  * yes, you _may_ feel excited because you are pluging in your new blue wonder
+  * no, it's **not** going to start doing anything awesome just yet
+  * plug your NCS into a USB interface on your PC
+    * many people refer to this being a USB3 socket, but it will work with USB2
+  * In your Virtual Hosting software (VirtualBox or vmWare WS) open guest machine settings
+  * Ports / USB / Device Filters / Add
+  * you should see the plug and play (PNP) IDs for the NCS
+    * here are suggested PNP ID values 
+    * credit https://ncsforum.movidius.com/discussion/406/ncs-on-windows-10-with-virtualbox
+    * 03E7:2150   (USB2) 
+    * 03E7:F63B   (USB3)
+    * 040e:f63b   (USB3, may be incorrect)
+  * check you can see the device in ubuntu
+    * from a terminal run the command 
+
+```    
+lsusb
+```
+
+## Now you have ?ubuntu...
+
+* Install the Movidius™ Neural Compute (MvNC) SDK
+  * open a Terminal window (CTRL-ALT-T)
+  * paste in the following commands
+
+```
+# credit https://developer.movidius.com/start
+mkdir -p ~/workspace
+cd ~/workspace
+# using branch for new v2 - see https://github.com/movidius/ncsdk
+git clone -b ncsdk2 https://github.com/movidius/ncsdk.git
+cd ~/workspace/ncsdk
+make install
+```
+
+  * if the latter fails you may have to install some build dependencies
+    * google what and add the steps in here above
+  * 
+* Run the examples
+
+```
+# credit https://developer.movidius.com/start
+# Test installation by running built-in examples
+cd ~/workspace/ncsdk
+make examples
+```
+
+### Development workflow
+
+* https://movidius.github.io/ncsdk/
+
+#### Advanced usage with docker containers
+
+see: 
+
+* https://github.com/kwierman/docker_ncsdk
 * 
+
 
