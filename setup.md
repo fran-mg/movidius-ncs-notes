@@ -57,11 +57,15 @@ sudo ./VBoxLinuxAdditions.run
  
 ## Now you have ?ubuntu...
 
-* Install the Movidius™ Neural Compute (MvNC) SDK
+* Install the Movidius™ Neural Compute (MvNC) Software Development Kit (SDK)
+  * NB: this is using the source code branch for the SDK VERSION 2  
   * open a Terminal window (CTRL-ALT-T)
   * paste in the following commands
 
 ```
+# install the dependencies 
+sudo apt install -y git make
+
 # credit https://developer.movidius.com/start
 mkdir -p ~/workspace
 cd ~/workspace
