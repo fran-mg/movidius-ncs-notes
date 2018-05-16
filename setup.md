@@ -77,6 +77,6 @@ make examples
 see: 
 
 * https://github.com/kwierman/docker_ncsdk
-* 
+* https://stackoverflow.com/questions/49181354/run-ncsdk-movidius-neural-stick-on-macos
 
 
