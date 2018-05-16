@@ -39,7 +39,20 @@ Use Oracle VirtualBox to host a linux guest OS
 ```    
 lsusb
 ```
+* Enable copy & paste
+ * Insert/ Mount guest additions cdrom
+ * Open in file manager
+ * press F4 to open a terminal in this folder
+ * Install the guest additions with the command...
 
+```
+sudo ./VBoxLinuxAdditions.run
+```
+  * when you get the message 'installed you may need to restart'...
+  * from the Start / Logout menu pick Reboot
+  * After restart in the VM menu...
+    * Devices / Shared Clipboard / Bidirectional
+ 
 ## Now you have ?ubuntu...
 
 * Install the Movidius™ Neural Compute (MvNC) SDK
