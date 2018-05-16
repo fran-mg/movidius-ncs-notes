@@ -53,6 +53,7 @@ lsusb
 ## Enable copy & paste
 
 * Insert/ Mount guest additions cdrom
+  * in the VBox guest menu: Devices / Insert Guest Additions CD image
 * Open in file manager
 * press F4 to open a terminal in this folder
 * Install the guest additions with the command...
@@ -65,6 +66,9 @@ sudo ./VBoxLinuxAdditions.run
 * from the Start / Logout menu pick Reboot
 * After restart in the VM menu...
   * Devices / Shared Clipboard / Bidirectional
+
+As a bonus, you can now dynamically resize the desktop area by dragging the window edges
+
 
 ## Now you have ?ubuntu...
 
