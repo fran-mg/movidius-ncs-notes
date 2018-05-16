@@ -5,6 +5,8 @@ Here are simple step by step instructions for setting up a guest virtual machine
 Use Oracle VirtualBox to host a linux guest OS
 * Install Virtual Box
   * or you could use vmWare workstation if you prefer
+  * you will also need Virtual Box Extension Pack to use USB2/3
+    * https://www.virtualbox.org/wiki/Downloads
 * download Ubuntu ISO
   * Current [support](https://ncsforum.movidius.com/discussion/100/product-faq) only for Ubuntu 16.04
   * coming from Windows you may find it easier to use Lubuntu derivitive
