@@ -9,7 +9,9 @@ You can see an introduction at [https://ncsforum.movidius.com/discussion/670/caf
 
 But the simplest build steps are at [https://movidius.github.io/blog/ncs-apps-on-rpi/]
 
-<coming soon>
+see more at https://medium.com/@hsheil/movidius-neural-compute-stick-and-raspberry-3-quick-start-guide-a89ff5e1d7ca
+
+    coming soon
   
   
 ## More on Pi
