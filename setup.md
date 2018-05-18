@@ -113,6 +113,20 @@ cd ~/workspace/ncsdk
 make examples
 ```
 
+### Troubleshooting
+
+If you get odd errors when playing with the install, 
+you can uninstall the SDK to try again as follows
+
+```
+cd ~/workspace/ncsdk
+./uninstall.sh
+cd ..
+rm –rf ncsdk
+# credit https://ncsforum.movidius.com/discussion/670/caffe-build-error-during-ncsdk-installation
+```
+
+
 ## Next Steps
 
 * Try the NCAppZoo stream_infer to recognise from a webcam
