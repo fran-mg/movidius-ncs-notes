@@ -4,6 +4,8 @@ Here are simple step by step instructions for setting up a guest virtual machine
 
 Use Oracle VirtualBox to host a linux guest OS
 
+These instructions have been tested on macOS High Sierra, but should work fine in Windows too.
+
 ## Install Virtual Box
 
 * or you could use vmWare workstation if you prefer
@@ -19,6 +21,13 @@ Use Oracle VirtualBox to host a linux guest OS
 ## create the VM
 
 * 20GB should be more than ample
+* Open the Device Settings to add Pass through PNP Device filters
+  * Ports / USB 
+  * Enable USB: USB3 (xHCI controller)
+  * Device Filters / Add Empty / Edit
+  * Name: NCS USB2 - Venor ID: 03e7 - Product ID: 2150
+  * Name: NCS USB3 - Venor ID: 03e7 - Product ID: f63b
+  * credit https://ncsforum.movidius.com/discussion/406/ncs-on-windows-10-with-virtualbox 
 * mount the ISO in the virtual cdrom
 * start up the VM
 * choose Try Lubuntu 
@@ -27,48 +36,58 @@ Use Oracle VirtualBox to host a linux guest OS
   * this is safe because you're in a VM and the VMDK was just created empty :)
 * answer install steps as you prefer
 * follow through until reboot
-* unmount the ISO from the VM and restart
+* unmount the ISO from the VM
+* reboot
 
-## pass the USB stick through to the VM
+## Install guest tools
 
-* yes, you _may_ feel excited because you are pluging in your new blue wonder
-* no, it's **not** going to start doing anything awesome just yet
-* plug your NCS into a USB interface on your PC
-  * many people refer to this being a USB3 socket, but it will work with USB2
-* In your Virtual Hosting software (VirtualBox or vmWare WS) open guest machine settings
-* Ports / USB / Device Filters / Add
-* you should see the plug and play (PNP) IDs for the NCS
-  * here are suggested PNP ID values 
-  * credit https://ncsforum.movidius.com/discussion/406/ncs-on-windows-10-with-virtualbox
-  * 03E7:2150   (USB2) 
-  * 03E7:F63B   (USB3)
-  * 040e:f63b   (USB3, may be incorrect)
-* check you can see the device in ubuntu
-  * from a terminal run the command 
+This is the other part of getting the USB working properly
 
-```    
-lsusb
+**Note:** when you use sudo in ubuntu you are asked for a password. 
+You may find it easier to type 
+
+```
+sudo echo
 ```
 
-## Enable copy & paste
+so that you are prompted for that password (which is cached for 5 minutes) 
+before you paste in code blocks
 
-* Insert/ Mount guest additions cdrom
+**Hint:** if you can't paste these commands into your VM from your host, 
+then browse to this page _inside_ your VM :)
+
+* Insert/ Mount **Guest Additions Cdrom**
   * in the VBox guest menu: Devices / Insert Guest Additions CD image
 * Open in file manager
 * press F4 to open a terminal in this folder
 * Install the guest additions with the command...
 
 ```
+# install the dependency 'dkms' to get guest tools installed
+sudo apt install -y git dkms
+
 sudo ./VBoxLinuxAdditions.run
 ```
 
-* when you get the message 'installed you may need to restart'...
-* from the Start / Logout menu pick Reboot
-* After restart in the VM menu...
+if it installed without errors then reboot (`sudo reboot`)
+
+* Enable copy & paste
   * Devices / Shared Clipboard / Bidirectional
 
 As a bonus, you can now dynamically resize the desktop area by dragging the window edges
 
+
+## test you can pass the USB stick through to the VM
+
+* yes, you _may_ feel excited because you are pluging in your new blue wonder
+* no, it's **not** going to start doing anything awesome just yet
+* plug your NCS into a USB interface on your PC
+* check you can see the device in ubuntu
+  * from a terminal run the command 
+
+```    
+lsusb
+```
 
 ## Now you have ?ubuntu...
 
