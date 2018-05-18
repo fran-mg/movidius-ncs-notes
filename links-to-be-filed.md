@@ -1,4 +1,10 @@
 
+
+The [vision behind Myriad 2](https://www.youtube.com/watch?v=hD3RYGJgH4A), 
+the Visual Processor Unit (VPU) inside the Neural Compute Stick.
+If you find it too waffley, skip to 2:22 to see what makes the inside of the chip special
+
+
 It looks like they've made those NCS sticks really easy to code with
 https://movidius.github.io/blog/ncs-image-classifier/
 
