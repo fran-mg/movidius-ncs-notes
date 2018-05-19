@@ -1,0 +1,31 @@
+
+## So what's inside my Movidius NCS 
+
+As well as showing you pictures of what's inside the shiny blue stick in your hand, 
+let's have a quick history lesson on the people that put it there.
+
+Intel's Neural Compute Stick (NCS) is based on the Myriad 2 Visual Processing Unit (VPU). 
+The company Movidius was started by a couple of guys from Dublin in 2005, 
+Dr Sean Mitchell and David Moloney.
+
+In 2013 they took Remi El-Ouazzane as their CEO, 
+a bright young chap who'd made his name at renowned global chipmaker Texas Instruments, 
+with numerous successes behind some of the processors 
+that helped drive the growth in smart phones in previous years. 
+
+Movidius contributed VPUs to the Google Tango project, with the 'Peanut' phone in 2014. 
+And in January 2016 they announced a partnership with Google to power a VR headset 
+to replace the Google Cardboard.
+
+Their previous successes had allowed them to raise up to $90m dollars in funding, 
+up until they announced their Fathon in April 2016. 
+A few months later in autumn 2016 Intel decided they wanted in on the action and bought the company. 
+
+It is clear that the Intel product designers were given two main objectives in their brief. 
+The marketeers wanted them to turn it from a cheap looking pen drive 
+into something sexy looking that geeks would associate with visual computing power. 
+And the engineers must have mentioned that the chip gets a little bit hot when processing, 
+so find a way to dissipate that safely by turning the body into a heat sink.
+
+So there you have the product that enthusiasts across the world now have in their hand.
+
