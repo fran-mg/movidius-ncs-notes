@@ -19,6 +19,26 @@ to replace the Google Cardboard.
 
 Their previous successes had allowed them to raise up to $90m dollars in funding, 
 up until they announced their Fathon in April 2016. 
+[https://www.bdti.com/InsideDSP/2016/05/26/Movidius](Details about the Fathon) explained that
+it was a software framework for developing, learning then recognising, as well as 
+a Neural Compute Stick. So they had got the words right, but the looks just weren't quite there.
+
+Oh, you wanted to know about the technical side too?! Well 
+It uses the good old MA2450 variant of Myriad2, 
+and includes and also containing 512 Mbytes of LPDDR3 SDRAM. 
+The data sheet says the Myriad2 can deliver TeraFLOPS 
+(trillions of floating-point operations per second) 
+but that might be in ideal conditions. 
+
+One of it's chief claims is low power consumption, 
+and they say it will run at leass than one watt (1W), 
+which compared to the 3W drawn by typical modern samrtphone CPUs is low. 
+In my tests, the full NCS package, including additional circuitry, 
+ran 60mW when idle, and up to 200mW when sending jobs or recieving results. 
+(I have yet to test full blown continuous visual processing)
+
+If you want to see more detail on the VPU itself, then you will find loads in 
+the [https://uploads.movidius.com/1503680554-2016-12-12_VPU_ProductBrief.pdf](MA2450 product brief)
 A few months later in autumn 2016 Intel decided they wanted in on the action and bought the company. 
 
 It is clear that the Intel product designers were given two main objectives in their brief. 
@@ -28,4 +48,13 @@ And the engineers must have mentioned that the chip gets a little bit hot when p
 so find a way to dissipate that safely by turning the body into a heat sink.
 
 So there you have the product that enthusiasts across the world now have in their hand.
+For some reason Intel are very tight lipped about what they have included in their package: 
+if you look at their [https://docs-emea.rs-online.com/webdocs/15c9/0900766b815c9668.pdf](data sheet) 
+you see little more than the external physical dimensions that your own hand can tell you. 
+
+And if you want to see what else you could get your hands on soon, 
+[https://hackaday.com/2017/12/17/googles-aiy-vision-kit-augments-pi-with-vision-processor/](Google have made another AIY 'hat'), 
+their VisionBonnet for the Pi Zero, also based on the MA2450 Myriad2.
+
+[[https://hackadaycom.files.wordpress.com/2017/12/aiy-visionkit-bonnet_cr1.jpg|alt=Google AIY Vision Bonnet board]]
 
