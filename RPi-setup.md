@@ -13,7 +13,14 @@ see more at https://medium.com/@hsheil/movidius-neural-compute-stick-and-raspber
 
     coming soon
   
-  
+## Notes on Power Consumption
+
+Movidius say their package runs on less than a watt, 
+which we can assume means up to a watt (1W = 1000mW). 
+Considering that the Pi draws 200-500mW, 
+you would do well to look for a 2W power source for any setup 
+where you use the Pi with an NCS. 
+
 ## More on Pi
 
 As an alternative to NCS + Pi why not consider 
