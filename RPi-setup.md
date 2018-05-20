@@ -9,7 +9,9 @@ You can see an introduction at [https://ncsforum.movidius.com/discussion/670/caf
 
 But the simplest build steps are at [https://movidius.github.io/blog/ncs-apps-on-rpi/]
 
-see more at https://medium.com/@hsheil/movidius-neural-compute-stick-and-raspberry-3-quick-start-guide-a89ff5e1d7ca
+see more at https://medium.com/@hsheil/movidius-neural-compute-stick-and-raspberry-3-quick-start-guide-a89ff5e1d7ca or [https://www.pyimagesearch.com/2018/02/12/getting-started-with-the-intel-movidius-neural-compute-stick/] 
+or [https://www.pyimagesearch.com/2018/02/19/real-time-object-detection-on-the-raspberry-pi-with-the-movidius-ncs/] or []
+
 
     coming soon
 
