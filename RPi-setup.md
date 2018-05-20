@@ -12,7 +12,15 @@ But the simplest build steps are at [https://movidius.github.io/blog/ncs-apps-on
 see more at https://medium.com/@hsheil/movidius-neural-compute-stick-and-raspberry-3-quick-start-guide-a89ff5e1d7ca
 
     coming soon
-  
+
+## Cheating on Mac
+
+I wanted to have instructions for setting up a Raspbian image from a macOS, 
+but I got lazy. I just passed through the USB device for my microSD card reader, 
+abd then followed the instuctions at [https://github.com/artmg/MuGammaPi/wiki/Raspbian-basics] 
+with the linked commands at [https://github.com/artmg/lubuild/blob/master/help/configure/write-Distro-to-flash.md#choice--simpler---dd]. 
+
+
 ## Notes on Power Consumption
 
 Movidius say their package runs on less than a watt, 
