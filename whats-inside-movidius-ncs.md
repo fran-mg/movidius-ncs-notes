@@ -17,13 +17,13 @@ And in January 2016 they announced a partnership with Google to power a VR heads
 to replace the Google Cardboard.
 Their previous successes had allowed them to raise up to $90m dollars in funding, 
 up until they announced their Fathon in April 2016. 
-[https://www.bdti.com/InsideDSP/2016/05/26/Movidius](Details about the Fathon) explained that
+[Details about the Fathon](https://www.bdti.com/InsideDSP/2016/05/26/Movidius) explained that
 it was a software framework for developing, learning then recognising, as well as 
 a Neural Compute Stick. So they had got the words right, but the looks just weren't quite there.
 
 But unlike the Intel version, you can see Inside (R).
 
-[[https://www.bdti.com/sites/default/files/insidedsp/articlepix/201604/movidius-fathom.jpeg|Movidius Fathom USB stick in see thru case]]
+![Movidius Fathom USB stick in see thru case](https://www.bdti.com/sites/default/files/insidedsp/articlepix/201604/movidius-fathom.jpeg)
 
 So, you wanted to know about the technical inside too?! Well 
 It uses the good old MA2450 variant of Myriad2, 
@@ -46,10 +46,10 @@ from a high end camera's 'charged-couple device' (CCD) sensor,
 it's plenty enough for the kind of images you're likely to 
 get from your mobile or Pi camera, or PC webcam. 
 
-Whilst on the subject of data, the [https://www.bdti.com/InsideDSP/2016/05/26/Movidius](BDTI article on the Fathom) 
+Whilst on the subject of data, the [BDTI article on the Fathom](https://www.bdti.com/InsideDSP/2016/05/26/Movidius)
 also includes a useful insight into the what is being processed where in the over workflow. 
 
-[[https://www.bdti.com/sites/default/files/insidedsp/articlepix/201604/FathomGen.png]]
+![https://www.bdti.com/sites/default/files/insidedsp/articlepix/201604/FathomGen.png]
 
 Back to the hardware. 
 One of it's chief claims is low power consumption, 
@@ -60,7 +60,7 @@ ran 60mW when idle, and up to 200mW when sending jobs or recieving results.
 (I have yet to test full blown continuous visual processing)
 
 If you want to see more detail on the VPU itself, then you will find loads in 
-the [https://uploads.movidius.com/1503680554-2016-12-12_VPU_ProductBrief.pdf](MA2450 product brief). 
+the [MA2450 product brief](https://uploads.movidius.com/1503680554-2016-12-12_VPU_ProductBrief.pdf). 
 This explains that there are 12 individual 'SHAVE' processors, 
 which are based on Very Long Instruction Word (VLIW) technology. 
 Microprocessors were originally built to run software programmes 
@@ -75,12 +75,12 @@ VLIW takes this idea further, by making the software designer have to do more of
 so that the processor can just get on with going crunch -crunch -crunch 
 with all the data you throw at it, and it is designed to do it in parallel. 
 If you really want to get the best series of images 'showing' you what is inside the NCS, 
-this [https://en.wikichip.org/wiki/movidius/microarchitectures/shave_v2.0](excellent wikichip article) 
+this [excellent wikichip article](https://en.wikichip.org/wiki/movidius/microarchitectures/shave_v2.0) 
 gives you a plethora to choose from. 
 
 So here you have the Fathom stick, doesn't look _that_ bad, does it.
 
-[[https://cache.movidius.com/images/made/images/remote/http_movidius-uploads.s3.amazonaws.com/1461855269-Screen-Shot-2016-04-27-at-3.13.16-PM_1425_830_s_c1.png]]
+![Fathom USB encased in white plastic with logo](https://cache.movidius.com/images/made/images/remote/http_movidius-uploads.s3.amazonaws.com/1461855269-Screen-Shot-2016-04-27-at-3.13.16-PM_1425_830_s_c1.png)
 
 A few months after the Fathom was announced, in autumn 2016, 
 Intel decided they wanted in on the action and bought the company. 
@@ -93,14 +93,14 @@ so they found a way to dissipate that safely by turning the body into a heat sin
 
 So there you have the product that enthusiasts across the world now have in their hand.
 For some reason Intel are very tight lipped about what they have included in their package: 
-if you look at their [https://docs-emea.rs-online.com/webdocs/15c9/0900766b815c9668.pdf](data sheet) 
+if you look at their [data sheet](https://docs-emea.rs-online.com/webdocs/15c9/0900766b815c9668.pdf)
 you see little more than the external physical dimensions that your own hand can tell you. 
 
 And if you want to see what else you could get your hands on soon, 
-[https://hackaday.com/2017/12/17/googles-aiy-vision-kit-augments-pi-with-vision-processor/](Google have made another AIY 'hat'), 
+[Google have made another AIY 'hat'](https://hackaday.com/2017/12/17/googles-aiy-vision-kit-augments-pi-with-vision-processor/), 
 their VisionBonnet for the Pi Zero, also based on the MA2450 Myriad2.
 
-[[https://hackadaycom.files.wordpress.com/2017/12/aiy-visionkit-bonnet_cr1.jpg|alt=Google AIY Vision Bonnet board]]
+![Google AIY Vision Bonnet board](https://hackadaycom.files.wordpress.com/2017/12/aiy-visionkit-bonnet_cr1.jpg)
 
 And what's more, not only will it be smaller and less power hungry than the Pi + NCS, 
 but look where the camera module plugs in, direct to the board with the Myriad - 
