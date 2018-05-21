@@ -49,7 +49,7 @@ get from your mobile or Pi camera, or PC webcam.
 Whilst on the subject of data, the [BDTI article on the Fathom](https://www.bdti.com/InsideDSP/2016/05/26/Movidius)
 also includes a useful insight into the what is being processed where in the over workflow. 
 
-![https://www.bdti.com/sites/default/files/insidedsp/articlepix/201604/FathomGen.png]
+![Workflow](https://www.bdti.com/sites/default/files/insidedsp/articlepix/201604/FathomGen.png)
 
 Back to the hardware. 
 One of it's chief claims is low power consumption, 
