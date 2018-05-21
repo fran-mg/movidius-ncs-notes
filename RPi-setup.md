@@ -1,6 +1,8 @@
 
 This is how to set up a Raspberry Pi to execute via the Movidius NCS.
 
+![NCS, Pi and bits](https://github.com/artmg/mireadd/blob/master/images/NCS-with-Pi-and-accessories.jpeg)
+
 Note that you will not use the Full SDK, only the API. 
 This means that you cannot **develop Graphs** on the Pi, 
 only execute ones you have already developed.
