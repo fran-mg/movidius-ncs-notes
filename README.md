@@ -7,3 +7,4 @@ This was previously known as `movidius-ncs-notes`, but the name changed to mire 
 * mire is spanish for `To Look` and add is computation
 * it makes it a lot easier to google :)
 
+![Out of it's box](images/NCS-unboxed.jpeg)
