@@ -22,3 +22,21 @@ sudo apt install -y cheese
 ```
 cheese
 ```
+
+## Clone scripts to use
+
+We found https://github.com/gudovskiy/yoloNCS a little complicated, 
+so we instead used https://github.com/jincongho/NCS_TinyYolo for the script to 
+take the webcam feed and pass it to YOLO
+
+```
+mkdir -p ~/CamRecog
+cd ~/CamRecog
+git clone https://github.com/jincongho/NCS_TinyYolo.git
+make
+```
+
+FYI some people seem to store their CAFFE models on Google Drive, 
+from which you can't download using the command line, 
+so you'll need to do those manually 
+
