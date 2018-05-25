@@ -33,6 +33,7 @@ take the webcam feed and pass it to YOLO
 mkdir -p ~/CamRecog
 cd ~/CamRecog
 git clone https://github.com/jincongho/NCS_TinyYolo.git
+cd NCS_TinyYolo
 make
 ```
 
