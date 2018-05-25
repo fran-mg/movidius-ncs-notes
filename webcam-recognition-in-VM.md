@@ -13,3 +13,12 @@ This example refers to Virtual Box options.
 
 This will test whether you have successfully passed your webcam into the VM
 
+If guvcviev failed:
+* Open terminal
+```
+sudo apt install -y cheese
+```
+* Then run
+```
+cheese
+```
