@@ -11,7 +11,7 @@ This is a good place to come to begin to understand about neural networks and de
 Joseph Redmon began the [Darknet project](https://github.com/pjreddie/darknet), a framework using C and CUDA. 
 This has been used as the core of a lot of work by other people. 
 
-Redmon then worked with Ali Farhadi on the YOLO and YOLOv2 networks, 
+Redmon then worked with Ali Farhadi on the [YOLO and YOLOv2 networks](https://pjreddie.com/darknet/yolo/), 
 (with some interim input from Santosh Divvala and Ross Girshick)
 
 According to Matthijs Hollemans' [Machine Think article](http://machinethink.net/blog/object-detection-with-yolo/), 
