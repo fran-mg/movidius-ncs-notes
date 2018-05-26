@@ -1,0 +1,12 @@
+
+
+According to the (https://uploads.movidius.com/1503680554-2016-12-12_VPU_ProductBrief.pdf)[product brief] 
+for the MA2450, the video processing unit (VPU) chip inside the Intel Movidius Neural Compute Stick (NCS) 
+they designed it for the following target applications:
+
+* Deep Neural Network-based Classification
+* Pose Estimation
+* 3D Depth
+* Visual Inertial Odometry (Navigation)
+* Gesture/Eye Tracking and Recognition
+
